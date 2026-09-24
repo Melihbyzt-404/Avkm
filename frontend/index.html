@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVKM Çamaşır Dünyası - Perakende & Toptan (B2B)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- DİKEY YÜZEN GLASSMORPHISM DOCK MENÜ -->
+    <aside class="vertical-dock">
+        <div class="dock-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+        </div>
+
+        <div class="dock-brand" data-tooltip="AVKM Çamaşır Dünyası">
+            <img src="2_2.png" alt="AVKM Logo">
+        </div>
+
+        <div class="dock-divider"></div>
+
+        <nav class="dock-nav">
+            <ul>
+                <li>
+                    <a href="#hero" class="dock-item active" data-tooltip="Ana Sayfa">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#camasir-kadin" class="dock-item" data-tooltip="İç Giyim & Çamaşır">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sepet" class="dock-item dock-cart-item" data-tooltip="Sepetim">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#pijama-gecelik" class="dock-item" data-tooltip="Pijama & Gecelik">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </a>
+                </li>
+                <!-- MENÜYE EKLENEN İLETİŞİM İKONU -->
+                <li>
+                    <a href="#iletisim" class="dock-item" data-tooltip="İletişim & Konum">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="dock-divider"></div>
+
+            <ul>
+                <li>
+                    <a href="#b2b" class="dock-item" data-tooltip="Toptan B2B">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="dock-footer">
+            <a href="#b2b" class="dock-item" data-tooltip="B2B Giriş / Profil">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+            </a>
+        </div>
+    </aside>
+
+    <!-- SAĞ İÇERİK ALANI -->
+    <main class="main-content">
+
+        <section id="hero">
+            <div class="brand-title-box">
+                <div class="title-logo-badge">
+                    <img src="2_2.png" alt="AVKM Logo">
+                </div>
+                <div class="brand-text-wrapper">
+                    <h1 class="hero-brand-title">
+                        <span class="brand-bold">AVKM</span>
+                        <span class="brand-sub">Çamaşır Dünyası</span>
+                    </h1>
+                    <p class="section-subtitle">Aradığınız ürünü, kategoriyi veya markayı hemen arayın:</p>
+                </div>
+            </div>
+
+            <div class="search-filter-row">
+                <form class="search-pill-box" id="searchForm" onsubmit="return false;">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" id="searchInput" class="search-pill-input" placeholder="Arayın... (Örn: Boxer, Pijama, Saten)" autocomplete="off">
+                    <button type="reset" id="clearSearchBtn" class="clear-icon-btn" title="Temizle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </form>
+
+                <button type="button" id="filterToggleBtn" class="filter-toggle-btn">
+                    <svg class="filter-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                    </svg>
+                    <span>Filtrele</span>
+                    <span class="chevron-arrow" id="chevronArrow">▼</span>
+                </button>
+            </div>
+
+            <div id="filterPanel" class="filter-expandable-panel">
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label class="filter-label">Ürün Türü / Kategori</label>
+                        <select class="filter-select" id="filterType">
+                            <option value="all">Tüm Ürünler</option>
+                            <option value="kadin">Kadın İç Giyim</option>
+                            <option value="erkek">Erkek İç Giyim</option>
+                            <option value="cocuk">Çocuk İç Giyim</option>
+                            <option value="pijama">Pijama & Gecelik</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Beden</label>
+                        <div class="size-options">
+                            <button type="button" class="size-btn active">Tümü</button>
+                            <button type="button" class="size-btn">S</button>
+                            <button type="button" class="size-btn">M</button>
+                            <button type="button" class="size-btn">L</button>
+                            <button type="button" class="size-btn">XL</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Fiyat Aralığı (₺)</label>
+                        <div class="price-range-inputs">
+                            <input type="number" placeholder="Min" class="price-input" id="minPrice">
+                            <span class="price-separator">-</span>
+                            <input type="number" placeholder="Maks" class="price-input" id="maxPrice">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-actions">
+                    <button type="button" class="btn-reset-filters" id="resetFiltersBtn">Filtreleri Sıfırla</button>
+                    <button type="button" class="btn-apply-filters" id="applyFiltersBtn">Uygula</button>
+                </div>
+            </div>
+
+            <!-- 3D CAROUSEL -->
+            <div class="showcase-wrapper">
+                <h3 class="showcase-title">Öne Çıkan Ürünler</h3>
+                
+                <div class="coverflow-carousel" id="coverflowCarousel">
+                    <button class="carousel-arrow prev-arrow" id="prevBtn" title="Önceki">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <div class="carousel-track">
+                        <div class="product-card" data-index="0">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&q=80" alt="Kadın İpek Gecelik">
+                                <button class="fav-btn" title="Favorilere Ekle">
+                                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="card-details">
+                                <span class="product-category">Kadın İç Giyim</span>
+                                <h4 class="product-title">Dantelli İpek Saten Gecelik</h4>
+                                <div class="card-bottom-row">
+                                    <span class="product-price">489,90 ₺</span>
+                                    <button class="add-to-cart-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        <span>Sepete Ekle</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-index="1">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&q=80" alt="Erkek Siyah Boxer Set">
+                                <button class="fav-btn" title="Favorilere Ekle">
+                                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="card-details">
+                                <span class="product-category">Erkek İç Giyim</span>
+                                <h4 class="product-title">Premium Pamuklu Boxer (3'lü Paket)</h4>
+                                <div class="card-bottom-row">
+                                    <span class="product-price">329,90 ₺</span>
+                                    <button class="add-to-cart-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        <span>Sepete Ekle</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-index="2">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80" alt="Kadın Velvet Sabahlık">
+                                <button class="fav-btn" title="Favorilere Ekle">
+                                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="card-details">
+                                <span class="product-category">Pijama & Gecelik</span>
+                                <h4 class="product-title">Kadife Detaylı Sabahlık Takımı</h4>
+                                <div class="card-bottom-row">
+                                    <span class="product-price">749,90 ₺</span>
+                                    <button class="add-to-cart-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        <span>Sepete Ekle</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-index="3">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&q=80" alt="Çocuk Pijama Takımı">
+                                <button class="fav-btn" title="Favorilere Ekle">
+                                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="card-details">
+                                <span class="product-category">Çocuk İç Giyim</span>
+                                <h4 class="product-title">Desenli %100 Pamuk Çocuk Pijama</h4>
+                                <div class="card-bottom-row">
+                                    <span class="product-price">259,90 ₺</span>
+                                    <button class="add-to-cart-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        <span>Sepete Ekle</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow next-arrow" id="nextBtn" title="Sonraki">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="camasir-kadin">
+            <div class="section-header">
+                <h2 class="section-title">İç Giyim & Çamaşır Koleksiyonu</h2>
+            </div>
+            <p class="section-subtitle">Kadın, Erkek ve Çocuk iç giyim ürünleri.</p>
+        </section>
+
+        <section id="pijama-gecelik">
+            <div class="section-header">
+                <h2 class="section-title">Pijama & Gecelik Koleksiyonu</h2>
+            </div>
+            <p class="section-subtitle">Saten, pamuklu ve mevsimlik gecelik çeşitleri.</p>
+        </section>
+
+        <section id="b2b">
+            <div class="section-header">
+                <h2 class="section-title">Toptan Satış (B2B) Portalı</h2>
+            </div>
+            <p class="section-subtitle">Toptan müşterilere özel giriş ve kayıt alanı.</p>
+        </section>
+
+        <!-- YENİ İLETİŞİM, MAĞAZA VE GELİŞTİRİCİ BÖLÜMÜ -->
+        <section id="iletisim">
+            <div class="section-header">
+                <h2 class="section-title">İletişim & Bize Ulaşın</h2>
+                <p class="section-subtitle">Sipariş, B2B toptan satış ve konum bilgilerimiz için bizimle iletişime geçin.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- MAĞAZA İLETİŞİM KARTI -->
+                <div class="contact-card store-card">
+                    <h3 class="card-heading">AVKM Çamaşır Dünyası</h3>
+                    <p class="card-subtext">Haftanın 7 günü hizmetinizdeyiz.</p>
+
+                    <div class="contact-links-list">
+                        <!-- WHATSAPP -->
+                        <a href="https://wa.me/905000000000" target="_blank" class="social-contact-btn whatsapp-btn">
+                            <div class="icon-box">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.982 9.982 0 004.779 1.221h.005c5.505 0 9.988-4.478 9.989-9.985A9.983 9.983 0 0012.012 2zm0 18.252h-.004a8.28 8.28 0 01-4.22-1.155l-.303-.18-3.136.741.758-3.056-.197-.313a8.27 8.27 0 01-1.268-4.305c.001-4.568 3.718-8.283 8.286-8.283 2.213 0 4.293.863 5.857 2.428a8.228 8.228 0 012.424 5.858c-.001 4.569-3.718 8.284-8.284 8.284zm4.542-6.203c-.249-.125-1.472-.727-1.7-.81-.228-.083-.394-.125-.56.125-.166.249-.643.81-.788.976-.145.166-.29.187-.539.062a6.8 6.8 0 01-2.001-1.232 7.498 7.498 0 01-1.385-1.724c-.145-.249-.015-.384.109-.508.112-.112.249-.29.374-.436.125-.145.166-.249.249-.415.083-.166.042-.311-.021-.436-.062-.125-.56-1.349-.768-1.847-.202-.486-.407-.42-.56-.428l-.477-.008c-.166 0-.436.062-.664.311s-.872.851-.872 2.076.892 2.408 1.017 2.574c.125.166 1.755 2.68 4.252 3.758.594.256 1.058.409 1.42.524.597.19 1.14.163 1.57.099.48-.071 1.472-.602 1.68-1.183.208-.581.208-1.08.145-1.183-.062-.104-.228-.166-.477-.291z"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text-content">
+                                <span class="label">WhatsApp Hatı</span>
+                                <span class="value">+90 (500) 000 00 00</span>
+                            </div>
+                        </a>
+
+                        <!-- MAĞAZA INSTAGRAM -->
+                        <a href="https://instagram.com" target="_blank" class="social-contact-btn instagram-btn">
+                            <div class="icon-box">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text-content">
+                                <span class="label">Instagram Sayfamız</span>
+                                <span class="value">@avkmcamasir</span>
+                            </div>
+                        </a>
+
+                        <!-- KONUM BİLGİSİ -->
+                        <div class="social-contact-btn location-info-btn">
+                            <div class="icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="btn-text-content">
+                                <span class="label">Mağaza Adresi</span>
+                                <span class="value">Merkez Mah. Tekstil Cad. No:12 Bursa, Türkiye</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GOOGLE MAPS KARTI -->
+                <div class="contact-card map-card">
+                    <h3 class="card-heading">Google Haritalar Konumu</h3>
+                    <div class="map-container">
+                        <!-- Google Maps Canlı Görünüm Embed -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195071.73837920786!2d28.8720815!3d40.188528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca15822c161ab3%3A0x2f7c0062a4d9c72e!2sBursa!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GELİŞTİRİCİ KARTI (DEVELOPER INFO) -->
+            <div class="developer-card">
+                <div class="dev-info-left">
+                    <div class="dev-badge">YAZILIM & GELİŞTİRİCİ</div>
+                    <h4 class="dev-title">Geliştirici Profil Bilgileri</h4>
+                    <p class="dev-desc">Bu platform özel frontend bileşenleri ve 3D etkileşim şemaları ile tasarlanmıştır.</p>
+                </div>
+
+                <div class="dev-social-links">
+                    <!-- GELİŞTİRİCİ INSTAGRAM -->
+                    <a href="https://www.instagram.com/melihbyzt/" target="_blank" class="dev-social-btn dev-insta" title="Instagram Profilim">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+
+                    <!-- GELİŞTİRİCİ GITHUB -->
+                    <a href="https://github.com/Melihbyzt-404" target="_blank" class="dev-social-btn dev-github" title="GitHub Profilim">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+
+                    <!-- GELİŞTİRİCİ LINKEDIN -->
+                    <a href="https://www.linkedin.com/in/melihbyzt-dev" target="_blank" class="dev-social-btn dev-linkedin" title="LinkedIn Profilim">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="toast-notification" id="toast">Ürün Sepete Eklendi!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ADMIN PANELI (Sadece Admin Giriş Yapınca Görünür) -->
+  <div id="adminPanelSection" style="display: none; padding: 20px; background: #1a1a1a; color: #fff; margin-top: 20px; border-radius: 8px;">
+      <h2>👑 AVKM Yönetim Paneli - B2B Başvuruları</h2>
+      <p>Bekleyen B2B müşteri başvurularını buradan onaylayabilirsiniz.</p>
+
+      <table border="1" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse; margin-top: 15px;">
+           <thead>
+              <tr style="background: #4A0E17; color: #D4A24E;">
+                <th>Ad Soyad</th>
+                <th>Firma Ünvanı</th>
+                <th>Vergi Dairesi / No</th>
+                <th>Telefon</th>
+                <th>İşlemler</th>
+               </tr>
+            </thead>
+            <tbody id="b2bApplicationsTable">
+                 <!-- JavaScript ile dinamik dolacak -->
+            </tbody>
+       </table>
+    </div>
 
     <!-- DİKEY YÜZEN GLASSMORPHISM DOCK MENÜ -->
     <aside class="vertical-dock">
